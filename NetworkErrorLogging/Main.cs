@@ -148,7 +148,7 @@ $@"[
                     str.Append(", ");
                 str.Append(pair.Key).Append("=").Append(pair.Value);
             }
-            Main.LogError(str.Append(" ]\nException: ").Append(exception?.GetStackTrace(true)).ToString());
+            Main.LogError(str.Append(" ]\nException: ").Append(exception).ToString());
         }
 #endif
     }
